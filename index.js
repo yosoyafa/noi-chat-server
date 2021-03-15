@@ -10,7 +10,6 @@ const options = require('./socket/options');
 const { onStart } = require('./socket/handlers');
 const io = require('socket.io')(server, options);
 
-
 onStart(io);
 
 server.listen(process.env.PORT || 5000, () => console.log(`Server has started.`));
