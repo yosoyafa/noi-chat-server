@@ -1,6 +1,6 @@
 const corsOptions = {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://604f9624484b7829b5c35abd--elegant-hamilton-646fc3.netlify.app/",
         methods: ["GET", "POST"],
     }
 };
