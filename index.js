@@ -7,8 +7,8 @@ const options = require('./socket/options');
 const { onStart } = require('./socket/handlers');
 const io = require('socket.io')(server, options);
 
-app.use(router);
 app.use(cors());
+app.use(router);
 
 onStart(io);
 
