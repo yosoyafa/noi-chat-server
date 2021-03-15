@@ -12,5 +12,4 @@ app.use(cors());
 
 onStart(io);
 
-const PORT = 3333;
-server.listen(PORT, () => console.log(`Server up on port ${PORT}`));
+server.listen(process.env.PORT || 5000, () => console.log(`Server has started.`));
